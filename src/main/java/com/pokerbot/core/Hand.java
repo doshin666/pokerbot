@@ -28,11 +28,8 @@ public class Hand {
     public void workOutBlinds(ArrayList<Player> players, ArrayList<Pot> potsList) {
         indexOfSB = indexOfButton + 1;
         indexOfBB = indexOfButton + 2;
-        players.get(indexOfSB).placeBet(smallBlindValue);
-        potsList.get(potsList.size()-1).addChipsToPot(smallBlindValue);
-        players.get(indexOfBB).placeBet(bigBlindValue);
-        potsList.get(potsList.size()-1).addChipsToPot(bigBlindValue);
-
+        players.get(indexOfSB).placeBet(smallBlindValue, potsList);
+        players.get(indexOfBB).placeBet(bigBlindValue, potsList);
     }
 
     public void preFlop(ArrayList<Player> players, ArrayList<Pot> potsList, int indexOfButton) {

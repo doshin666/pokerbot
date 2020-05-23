@@ -20,13 +20,15 @@ public class Player {
         return chipBalance;
     }
 
-    public int placeBet(int bet) {
+    public int placeBet(int bet, ArrayList<Pot> potsList) {
         int betPlaced;
         if (chipBalance >= bet){
             chipBalance = chipBalance - bet;
+            potsList.get(potsList.size()-1).addChipsToPot(bet);
             betPlaced = bet;
         } else {
             betPlaced = chipBalance;
+            potsList.get(potsList.size()-1).addChipsToPot(betPlaced);
         }
         return betPlaced;
     }
