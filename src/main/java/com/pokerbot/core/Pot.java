@@ -7,7 +7,7 @@ public class Pot {
         return potTotal;
     }
 
-    public void addChipsToPot(int bet){
+    public void addChipsToPot(int bet) {
         potTotal = potTotal + bet;
     }
 }

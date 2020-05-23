@@ -1,9 +1,7 @@
 package com.pokerbot.core;
 
 import edu.emory.mathcs.backport.java.util.Collections;
-
 import java.util.ArrayList;
-import java.util.Random;
 
 public class Deck {
 

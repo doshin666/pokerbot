@@ -11,8 +11,7 @@ public class Card {
         return rank;
     }
 
-    Card(short suit, short rank)
-    {
+    Card(short suit, short rank) {
         this.rank=rank;
         this.suit=suit;
     }
